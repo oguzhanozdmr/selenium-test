@@ -1,0 +1,48 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 5115milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 5115"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 51271"}
+{"logLevel":"info","message":"Listening on port:51271"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputPassword' and 'org.example.StepImplementation.inputPassword'"}
+{"logLevel":"debug","message":"Found Şifre alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputUserName' and 'org.example.StepImplementation.inputUserName'"}
+{"logLevel":"debug","message":"Found Kullanıcı alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLoginButton' and 'org.example.StepImplementation.clickLoginButton'"}
+{"logLevel":"debug","message":"Found Giriş buttonuna tıklanır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıklanılır. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıklanılır. : public void clickLogin()"}
+{"logLevel":"debug","message":"\tGiriş buttonuna tıklanır. : public void clickLoginButton()"}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+{"logLevel":"debug","message":"\tKullanıcı alanına {} bilgisi yazılır. : public void inputUserName(String userName)"}
+{"logLevel":"debug","message":"\tŞifre alanına {} bilgisi yazılır. : public void inputPassword(String password)"}
+1619207717656	geckodriver	INFO	Listening on 127.0.0.1:5503
+1619207718339	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_z/8wg9pq0n5nvg84n2fzxplsj00000gn/T/rust_mozprofileB3uUl5"
+1619207720708	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619207727757	Marionette	INFO	Listening on port 51302
+1619207727816	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nis 23, 2021 10:55:27 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} sayfası açılır' using 'class org.example.StepImplementation.openPage"}
+JavaScript error: , line 0: uncaught exception: Object
+{"logLevel":"debug","message":"Executing 'Giriş yap butonuna tıklanılır.' using 'class org.example.StepImplementation.clickLogin"}
+1619207744610	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+{"logLevel":"debug","message":"Executing 'Kullanıcı alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputUserName"}
+{"logLevel":"debug","message":"Executing 'Şifre alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputPassword"}
+{"logLevel":"debug","message":"Executing 'Giriş buttonuna tıklanır.' using 'class org.example.StepImplementation.clickLoginButton"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

@@ -1,0 +1,34 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 2404milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 2404"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 64764"}
+{"logLevel":"info","message":"Listening on port:64764"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıklanılır. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıklanılır. : public void clickLogin()"}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+1619205919343	geckodriver	INFO	Listening on 127.0.0.1:13692
+1619205919644	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_z/8wg9pq0n5nvg84n2fzxplsj00000gn/T/rust_mozprofilebIOPvB"
+1619205920721	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619205924614	Marionette	INFO	Listening on port 64814
+1619205924706	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nis 23, 2021 10:25:24 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Giriş yap butonuna tıklanılır.' using 'class org.example.StepImplementation.clickLogin"}
+1619205940423	Marionette	INFO	Stopped listening on port 64814
+JavaScript error: https://www.gstatic.com/recaptcha/releases/dpzVjBAupwRfx3UzvXRnnAKb/recaptcha__tr.js, line 122: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

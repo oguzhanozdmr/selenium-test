@@ -1,0 +1,45 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 3298milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 3298"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 50464"}
+{"logLevel":"info","message":"Listening on port:50464"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputUserName' and 'org.example.StepImplementation.inputUserName'"}
+{"logLevel":"debug","message":"Found Kullanıcı alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıklanılır. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıklanılır. : public void clickLogin()"}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+{"logLevel":"debug","message":"\tKullanıcı alanına {} bilgisi yazılır. : public void inputUserName(String userName)"}
+1619207070789	geckodriver	INFO	Listening on 127.0.0.1:17383
+1619207071397	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_z/8wg9pq0n5nvg84n2fzxplsj00000gn/T/rust_mozprofileacA7O2"
+1619207072794	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619207077281	Marionette	INFO	Listening on port 50501
+1619207077388	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nis 23, 2021 10:44:37 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} sayfası açılır' using 'class org.example.StepImplementation.openPage"}
+{"logLevel":"debug","message":"Executing 'Giriş yap butonuna tıklanılır.' using 'class org.example.StepImplementation.clickLogin"}
+1619207088635	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Üye Giriş Sayfası & Üye Ol - Hepsiburada
+{"logLevel":"debug","message":"Executing 'Kullanıcı alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputUserName"}
+
+1619207094938	Marionette	INFO	Stopped listening on port 50501
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

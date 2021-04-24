@@ -1,0 +1,97 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 1090milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 1090"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 52597"}
+{"logLevel":"info","message":"Listening on port:52597"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputPassword' and 'org.example.StepImplementation.inputPassword'"}
+{"logLevel":"debug","message":"Found Şifre alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.selectCategory' and 'org.example.StepImplementation.selectCategory'"}
+{"logLevel":"debug","message":"Found Rasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori seçilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputUserName' and 'org.example.StepImplementation.inputUserName'"}
+{"logLevel":"debug","message":"Found Kullanıcı alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.loginCheck' and 'org.example.StepImplementation.loginCheck'"}
+{"logLevel":"debug","message":"Found Login kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLoginButton' and 'org.example.StepImplementation.clickLoginButton'"}
+{"logLevel":"debug","message":"Found Giriş buttonuna tıklanır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıklanılır. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıklanılır. : public void clickLogin()"}
+{"logLevel":"debug","message":"\tGiriş buttonuna tıklanır. : public void clickLoginButton()"}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+{"logLevel":"debug","message":"\tKullanıcı alanına {} bilgisi yazılır. : public void inputUserName(String userName)"}
+{"logLevel":"debug","message":"\tLogin kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır. : public void loginCheck()"}
+{"logLevel":"debug","message":"\tRasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori seçilir. : public void selectCategory() throws InterruptedException"}
+{"logLevel":"debug","message":"\tŞifre alanına {} bilgisi yazılır. : public void inputPassword(String password)"}
+1619270999980	geckodriver	INFO	Listening on 127.0.0.1:11556
+1619271000145	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_z/8wg9pq0n5nvg84n2fzxplsj00000gn/T/rust_mozprofileXZAhKz"
+1619271000815	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619271002586	Marionette	INFO	Listening on port 52658
+1619271002655	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nis 24, 2021 4:30:02 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} sayfası açılır' using 'class org.example.StepImplementation.openPage"}
+console.error: (new TypeError("store is null", "resource://devtools/client/webconsole/webconsole-wrapper.js", 222))
+TypeError: store is null: dispatchSplitConsoleCloseButtonToggle@resource://devtools/client/webconsole/webconsole-wrapper.js:222:5
+_onChangeSplitConsoleState@resource://devtools/client/webconsole/webconsole-ui.js:650:18
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+selectTool/<@resource://devtools/client/framework/toolbox.js:2712:12
+
+JavaScript error: resource://devtools/client/framework/devtools.js, line 759: TypeError: inspector.inspectorFront is undefined
+{"logLevel":"debug","message":"Executing 'Giriş yap butonuna tıklanılır.' using 'class org.example.StepImplementation.clickLogin"}
+{"logLevel":"debug","message":"Executing 'Kullanıcı alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputUserName"}
+{"logLevel":"debug","message":"Executing 'Şifre alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputPassword"}
+{"logLevel":"debug","message":"Executing 'Giriş buttonuna tıklanır.' using 'class org.example.StepImplementation.clickLoginButton"}
+{"logLevel":"debug","message":"Executing 'Login kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır.' using 'class org.example.StepImplementation.loginCheck"}
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 571: NS_ERROR_INVALID_CONTENT_ENCODING: Component returned failure code: 0x804b001b (NS_ERROR_INVALID_CONTENT_ENCODING) [nsIStreamListener.onDataAvailable]
+1619271027224	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "InspectorUtils.hasRulesModifiedByCSSOM: Argument 1 does not implement interface CSSStyleSheet."
+console.error: (new TypeError("InspectorUtils.hasRulesModifiedByCSSOM: Argument 1 does not implement interface CSSStyleSheet.", "resource://devtools/server/actors/style-rule.js", 157))
+console.error: (new Error("Protocol error (TypeError): InspectorUtils.hasRulesModifiedByCSSOM: Argument 1 does not implement interface CSSStyleSheet. from: server0.conn0.child4/pagestyle73 (resource://devtools/server/actors/style-rule.js:157:25)", "resource://devtools/shared/protocol/Front.js", 358))
+console.error: (new Error("Protocol error (TypeError): InspectorUtils.hasRulesModifiedByCSSOM: Argument 1 does not implement interface CSSStyleSheet. from: server0.conn0.child4/pagestyle73 (resource://devtools/server/actors/style-rule.js:157:25)", "resource://devtools/shared/protocol/Front.js", 358))
+console.error: (new Error("Protocol error (TypeError): InspectorUtils.hasRulesModifiedByCSSOM: Argument 1 does not implement interface CSSStyleSheet. from: server0.conn0.child4/pagestyle73 (resource://devtools/server/actors/style-rule.js:157:25)", "resource://devtools/shared/protocol/Front.js", 358))
+console.error: "Error sending event: overflow-change"
+console.error: (new TypeError("can't access dead object", "resource://devtools/server/actors/inspector/utils.js", 132))
+TypeError: can't access dead object: standardTreeWalkerFilter@resource://devtools/server/actors/inspector/utils.js:132:5
+isSkippedNode@resource://devtools/server/actors/inspector/document-walker.js:217:17
+getStartingNode@resource://devtools/server/actors/inspector/document-walker.js:172:27
+DocumentWalker@resource://devtools/server/actors/inspector/document-walker.js:79:34
+getNonAnonymousDocumentWalker@resource://devtools/server/actors/inspector/walker.js:352:12
+rawParentNode@resource://devtools/server/actors/inspector/walker.js:706:27
+parentNode@resource://devtools/server/actors/inspector/walker.js:685:25
+form@resource://devtools/server/actors/inspector/node.js:160:36
+write@resource://devtools/shared/protocol/types.js:358:32
+types.addArrayType/write/<@resource://devtools/shared/protocol/types.js:215:33
+write@resource://devtools/shared/protocol/types.js:215:16
+write@resource://devtools/shared/protocol/Request.js:109:22
+write@resource://devtools/shared/protocol/Request.js:39:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_onReflows@resource://devtools/server/actors/inspector/walker.js:592:12
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_startEventLoop@resource://devtools/server/actors/reflow.js:314:12
+notify@resource://gre/modules/Timer.jsm:62:17
+
+{"logLevel":"debug","message":"Executing 'Rasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori seçilir.' using 'class org.example.StepImplementation.selectCategory"}
+1619271035305	Marionette	INFO	Stopped listening on port 52658
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

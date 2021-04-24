@@ -1,0 +1,17 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 3430milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 3430"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 61334"}
+{"logLevel":"info","message":"Listening on port:61334"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found giriş butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+{"logLevel":"debug","message":"\tgiriş butonuna tıkla : public void clickLogin()"}
+1619204166210	geckodriver	INFO	Listening on 127.0.0.1:15659

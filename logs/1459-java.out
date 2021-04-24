@@ -1,0 +1,51 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 2039milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 2039"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 55535"}
+{"logLevel":"info","message":"Listening on port:55535"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputPassword' and 'org.example.StepImplementation.inputPassword'"}
+{"logLevel":"debug","message":"Found Şifre alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Loading Rasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori\nseçilir.via reflected sources."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.inputUserName' and 'org.example.StepImplementation.inputUserName'"}
+{"logLevel":"debug","message":"Found Kullanıcı alanına {} bilgisi yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.loginCheck' and 'org.example.StepImplementation.loginCheck'"}
+{"logLevel":"debug","message":"Found Login kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLoginButton' and 'org.example.StepImplementation.clickLoginButton'"}
+{"logLevel":"debug","message":"Found Giriş buttonuna tıklanır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.openPage' and 'org.example.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} sayfası açılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.StepImplementation.clickLogin' and 'org.example.StepImplementation.clickLogin'"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıklanılır. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tRasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori\nseçilir. : null"}
+{"logLevel":"debug","message":"\tRasgele bir kategorinin üzerine gelinir ve açılan alt kategorlerden rasgele bir alt kategori\\nseçilir. : public void selectCategory()"}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıklanılır. : public void clickLogin()"}
+{"logLevel":"debug","message":"\tGiriş buttonuna tıklanır. : public void clickLoginButton()"}
+{"logLevel":"debug","message":"\t{} sayfası açılır : public void openPage(String site)"}
+{"logLevel":"debug","message":"\tKullanıcı alanına {} bilgisi yazılır. : public void inputUserName(String userName)"}
+{"logLevel":"debug","message":"\tLogin kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır. : public void loginCheck()"}
+{"logLevel":"debug","message":"\tŞifre alanına {} bilgisi yazılır. : public void inputPassword(String password)"}
+1619260416063	geckodriver	INFO	Listening on 127.0.0.1:17086
+1619260416460	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_z/8wg9pq0n5nvg84n2fzxplsj00000gn/T/rust_mozprofilexpzIWE"
+1619260418086	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619260422397	Marionette	INFO	Listening on port 55579
+1619260422455	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nis 24, 2021 1:33:42 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} sayfası açılır' using 'class org.example.StepImplementation.openPage"}
+{"logLevel":"debug","message":"Executing 'Giriş yap butonuna tıklanılır.' using 'class org.example.StepImplementation.clickLogin"}
+{"logLevel":"debug","message":"Executing 'Kullanıcı alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputUserName"}
+{"logLevel":"debug","message":"Executing 'Şifre alanına {} bilgisi yazılır.' using 'class org.example.StepImplementation.inputPassword"}
+{"logLevel":"debug","message":"Executing 'Giriş buttonuna tıklanır.' using 'class org.example.StepImplementation.clickLoginButton"}
+{"logLevel":"debug","message":"Executing 'Login kontrolü yapılır Eğer login başarılı olmuşsa sepet tutar kontrolü yapılır.' using 'class org.example.StepImplementation.loginCheck"}
+1619260438510	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://checkout.hepsiburada.com/sepetim, line 12: AbortError: The operation was aborted. 
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
